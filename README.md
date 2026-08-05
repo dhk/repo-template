@@ -38,8 +38,11 @@ them per-repo (skill-map's `CONTRIBUTING.md` is a good model) once a project
 actually wants contributors.
 
 CI workflows (`.github/workflows/`) are project-specific by nature — copy the
-relevant one from `praxis`, `crucible`, `skill-map`, or `tricorder` rather
-than templating a generic one that won't fit.
+relevant one from `praxis`, `crucible`, `skill-map`, `tricorder`, or (for an
+Astro/Node static site — build + non-blocking `astro check`, since a
+type-check step usually needs to start informational until a codebase earns
+a hard gate) `DHK-website`, rather than templating a generic one that won't
+fit.
 
 ## HANDOFF.md vs. docs/snapshots/ — the split that matters
 
