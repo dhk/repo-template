@@ -18,6 +18,9 @@ cd ~/Documents/dev/<new-repo-name>
 git init && git add -A && git commit -m "Initial scaffold from repo-template"
 ```
 
+Then work through [`SETUP.md`](template/SETUP.md) — the repo *settings* a file
+copy cannot carry.
+
 ## What's in it, and why
 
 | File | Answers | Pattern it's drawn from |
@@ -26,6 +29,7 @@ git init && git add -A && git commit -m "Initial scaffold from repo-template"
 | `CLAUDE.md` | Stack, architecture, conventions, **workflow rules** | Every repo's CLAUDE.md; workflow rules specifically from fossil |
 | `HANDOFF.md` | Where did I leave off, what's next, known gotchas | familiar-places/handoff.md |
 | `docs/snapshots/` | Frozen record of a design session or pivot, dated | fossil/context-snapshot.md, reading-with-ears' dated snapshots (relocated out of repo root — see below) |
+| `SETUP.md` | The repo settings that a file copy cannot carry — branch protection, Actions permissions, Pages, secrets, and the local `gh` scope | Learned by hitting each one; see the file's closing note |
 | `docs/design/` | Why a decision was made, not just what it is | praxis's four-question CONTRIBUTING.md frame, crucible/docs/concepts |
 | `.scratch/` (gitignored) | Ephemeral working files — never committed | adventures-in-ai, work-ledger, crucible, reading-with-ears all already do this |
 | `LICENSE` | Building in public means someone else can actually use this | Present in nearly every repo already |
